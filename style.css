@@ -1,0 +1,424 @@
+:root {
+	font-family: 'Tahoma', sans-serif;
+	font-size: 16px;
+
+	--offWhite: #F9F9F9;
+	--grayDark: #535F69;
+	--grayLight: #9F9F9F;
+	--blueDark: #202946;
+    --blueLight: #404966;	
+}
+
+body {
+	margin: 0;
+
+	background: linear-gradient(to right bottom, var(--blueDark), var(--blueLight));
+	color: #9F9F9F;
+	
+	/* Prevents awful super-bold font in OSX Firefox and Chrome */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Utilities */
+/* Font sizes */
+.giantFont { font-size: 2.25em; }
+.biggerFont { font-size: 1.5em; }
+.bigFont { font-size: 1.25em; }
+.biggishFont { font-size: 1.1em; }
+.normalFont { font-size: 1em; }
+.smallFont { font-size: 0.75em; }
+.tinyFont {	font-size: 0.6em; }
+
+.whiteFont { color: var(--offWhite); }
+.italic { font-style: italic; }
+
+/* Alignment */
+.floatLeft { float: left; }
+.floatRight { float: right; }
+.margin0Auto { margin: 0 auto; }
+.textAlignCenter { text-align: center; }
+
+.clickable:hover { cursor: pointer; }
+
+/* Prevent card link color changes and underlines */
+a:link, a:visited, a:hover, a:active { color: var(--grayLight); text-decoration: none; }
+/* Except in subheaders */
+.cardHeader a:link, .cardHeader a:visited, .cardHeader a:hover, .cardHeader a:active { text-decoration: underline; }
+
+/* Targets Chrome and Safari. Fixes misaligned centering of the last thing on the page */
+.centerFix:not(*:root) { margin-right: 5px; }
+
+.shadow { box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.24); }
+
+.flexbox {
+	display: flex;
+	justify-content: center; 	/* align horizontal */
+	align-items: center; 		/* align vertical */
+}
+
+.marginTop100 { margin-top: 100px; }
+.marginTop50 { margin-top: 50px; }
+
+/* scrollReveal.js stuff */
+html { 
+	height: 100%;						/* scrollReveal.js doesn't work right without this */
+	background-color: var(--blueDark);	/* This fixes a background gradient repeating bug that the previous line causes */
+}
+div { visibility: none; }				/* Prevents elements from showing up on the screen before the scrollReveal animation happens */
+
+/* Card Animation */
+@media screen and (min-width: 630px) {
+	.hoverRise {
+		position: relative;
+		top: 0px;
+		transition: top 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+	}
+	
+	.hoverRise:hover {
+		top: -5px;
+		box-shadow: 0px 20px 30px 0px rgba(0,0,0,0.25);
+	}
+}
+
+
+
+
+
+
+
+
+#heroImage {
+	background: url("Images/city.jpg") no-repeat;
+	height: 450px;
+	width: 100%;
+	background-size: 150%;
+	background-position: right;
+	/* needed to make the #resumeButton position absolute work */
+	position: relative;
+}
+
+#heroText {
+	text-align: center;
+	/* 50* - approximate element height */
+	position: relative;
+	top: calc(50% - 1.5em);
+}
+
+.heroSubtitle { margin-top: 3px; }
+
+.newResumeButton {
+	border: 0;
+	padding: 0 50px;
+	border-radius: 25px;
+	letter-spacing: 2px;
+	text-align: center;
+	line-height: 42px;
+	height: 48px;
+	width: 130px;
+	/* Color */
+	background: rgba(255, 255, 255, 0.07);
+	transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+	/* Position */
+	display: block;
+}
+
+.newResumeButton:hover { background: rgba(255, 255, 255, 0.12); }
+.newResumeButton:active { background: rgba(255, 255, 255, 0.07); }
+
+.resumeButtonTop {
+	/* 50% - approximate element height */
+	position: absolute;
+	bottom: 25px;
+	left: calc(50% - 115px);
+}
+
+
+
+
+
+
+
+
+.contactInfo {
+	background: var(--grayDark);
+	line-height: 50px;
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+
+
+
+
+
+
+
+#textIntro {
+	width: 90%;
+	padding: 50px 0 75px 0;
+	max-width: 865px;
+	line-height: 21px;
+}
+
+
+
+
+
+
+
+
+#majorProjects {
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+#majorProjectsHeader {
+	margin-bottom: 20px;
+}
+
+.majorProjectsItem {
+	height: 280px;
+	width: 374px;
+	padding-bottom: 20px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: flex-end;
+	margin: 0 -5px;
+	border-radius: 20px;
+}
+
+#mpSpacer {
+	width: 3%;
+	display: inline-block;
+}
+
+#mpMiniTES {
+	background: url("Images/miniTES.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#mpTranscend {
+	background: url("Images/transcend.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.githubCircle {
+	width: 30px;
+	opacity: 0.75;
+	position: absolute;
+	left: 5px;
+	bottom: 5px;
+}
+
+@media screen and (min-width: 800px) { .githubCircle:hover { opacity: 0.9; } }
+
+
+
+
+
+
+
+
+#smallProjectsBigContainer {
+	text-align: left;
+	width: 90%;
+	max-width: 865px;
+	margin: 0 auto;
+}
+
+.cardContainer {
+	text-align: center;
+	max-width: 900px;
+	margin: 0 auto 100 auto;
+	display: inline;
+}
+
+/* This fixes/hides a small clickable stripe in the margins of the small cards */
+/* These two improvements need to be zeroed out for IE because they break the hover animation */
+/* IE seems to be the only one not to have the problem that this fixes anyways */
+/* Which means IE is wrong >:( */
+_:-ms-input-placeholder, :root .card { margin: 20px 20px 0px 20px; display: inline-flex; }
+_:-ms-input-placeholder, :root .cardLinkContainer, .blankCard { margin: 0; display: inline; }
+
+.card {
+	flex-direction: column;
+	/* Fancy BG to hide the border masking issues at the top of the image */
+	background: linear-gradient(0deg, rgba(255, 255, 255, 0.9) 20%, rgba(255, 255, 255, 0) 10%);
+	/* Fancier design */
+	border-radius: 10px;
+	/* For centering the thinner app icons, and blank placeholders */
+	width: 171px;
+}
+
+.cardLinkContainer, .blankCard {
+	margin: 20px 20px 0px 20px;
+	display: inline-flex;
+}
+
+.cardHeader { margin-left: 20px; }
+
+.cardHeaderTwoRows {
+	position: absolute;
+	margin-top: -15px;
+	pointer-events: none;
+	text-align: left;
+}
+
+.cardImage {
+	width: 171px;
+	height: 137px;
+	margin: 0 auto;
+	/* Fancier design */
+	border-bottom: 1px solid var(--grayLight);
+	border-radius: 10px 10px 0 0;
+}
+
+.cardImageIOS {
+	height: 137px;
+	margin: 0 auto;
+}
+
+.cardSubtitle {
+	margin: 5px 0 8px 0;
+}
+
+
+
+
+
+
+
+
+#emailMeContainer {
+	margin: 50px 0 0 0;
+	text-align: center;
+}
+
+#contactTheAuthor {
+	margin-bottom: 25px;
+}
+
+#emailMeContainer input, #emailMeContainer textarea {
+    display: block;
+    width: 350px;
+	margin: 0 auto;
+    margin-bottom: 1em;
+	border: none;
+    padding: 5px;
+	font-family: 'Tahoma', sans-serif;
+	font-size: 1em;
+}
+
+#emailMeContainer textarea {
+	height: 10em;
+}
+
+#emailMeContainer input, #emailMeContainer textarea, #emailMeContainer button {
+	border-radius: 5px
+}
+
+#emailMeContainer input[type="submit"] {
+    background-color: #2999EA;
+    color: var(--offWhite);
+	transition: background-color 0.2s ease-in-out;
+}
+
+#emailMeContainer input[type="submit"]:hover {
+	background-color: #39A9FA;
+    cursor: pointer;
+}
+
+#emailMeContainer input[type="submit"]:disabled {
+	background-color: #AAA;
+    cursor: default;
+}
+
+
+
+
+
+
+
+
+#footer {
+	height: 200px;
+	background: var(--blueDark);
+}
+
+.resumeButtonBottom {
+	margin: 0 auto;
+	/* 50% - approximate element height */
+	position: absolute;
+	margin-top: 25px;
+	left: calc(50% - 115px);
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 960px) {		/* ======= iPad portrait, plus a lot ======= */
+	.majorProjectsItem { height: 230px; width: 300px; padding-bottom: 10px; }
+	#mpSpacer { width: 1%; }
+	
+	.githubCircle { position: absolute; margin-top: -50px; bottom: initial; left: initial; right: 10px; }
+	
+	#smallProjectsBigContainer { max-width: 650px; }
+	/* !important is required for IE11 :/ */
+	.cardPlaceholder { display: none !important; }
+}
+
+@media screen and (max-width: 720px) {
+	#smallProjectsBigContainer { max-width: 430px; }
+	
+	#emailMeContainer input, #emailMeContainer textarea { width: 300px; }
+}
+
+@media screen and (max-width: 630px) {		/* ======= iPad landscape splitscreen, plus a lot ======= */
+	#heroImage { height: 300px; }
+	#textIntro { padding: 30px 0 50px 0; }
+	
+	.contactInfo { line-height: 30px; }
+	.contactInfoSpacer { display: none; }
+	.contactInfoText { display: block; }
+
+	#majorProjects { margin-bottom: 30px; }
+	.majorProjectsItem { height: 350px; width: 90%; max-width: none; margin-bottom: 20px; border-radius: 20px; }
+	#mpTranscend { background-size: cover; }
+	#mpMiniTES { background-size: cover; }
+	#mpSpacer { display: none; }
+	.githubCircle { width: 60px; position: absolute; margin-top: -80px; bottom: initial; left: initial; right: 40px; }
+	
+	.marginTop100 { margin-top: 50px; }
+	.blankCard { display: none; }
+}
+
+@media screen and (max-width: 480px) {		/* ======= iPhone+, plus a lot ======= */
+	#heroImage { height: 250px; }
+
+	.majorProjectsItem { height: 290px; }
+	.githubCircle { right: 30px; }
+	
+	.card, .cardImage, .cardImageIOS { width: 335px; }
+	.cardImage { height: 267px; }
+}
+
+@media screen and (max-width: 376px) {		/* ======= iPhone ======= */
+	.majorProjectsItem { height: 260px; }
+	
+	.card, .cardImage { width: 300px; }
+	.cardImage { height: 240px; }
+}
+
+@media screen and (max-width: 320px) {		/* ======= iPhone smol ======= */
+	.majorProjectsItem { height: 220px; }
+	
+	.card, .cardImage { width: 250px; }
+	.cardImage { height: 200px; }
+}

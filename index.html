@@ -1,0 +1,426 @@
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Portfolio - Taylor Calderone</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta charset="utf-8"/>
+		<!-- Favicons -->
+		<link rel="apple-touch-icon" sizes="180x180" href="https://www.taylorcalderone.com/Images/Favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="https://www.taylorcalderone.com/Images/Favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="https://www.taylorcalderone.com/Images/Favicons/favicon-16x16.png">
+		<link rel="manifest" href="https://www.taylorcalderone.com/Images/Favicons/site.webmanifest">
+		<link rel="mask-icon" href="https://www.taylorcalderone.com/Images/Favicons/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="https://www.taylorcalderone.com/Images/Favicons/favicon.ico">
+		<meta name="msapplication-TileColor" content="#2b5797">
+		<meta name="msapplication-config" content="https://www.taylorcalderone.com/Images/Favicons/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+		<!-- scrollReveal.js -->
+		<script src='scrollreveal.min.js'></script>
+		<script>
+			function prepRevealJS() {
+				// ScrollReveal
+				window.sr = ScrollReveal();
+				sr.reveal('.reveal', { duration: 1000, scale: 1, reset: false, viewFactor: -0.1 });
+			}
+		</script>
+		<link rel="stylesheet" href="style.css">
+		<!-- These two lines polyfill CSS variables in IE -->
+		<script src="https://unpkg.com/css-vars-ponyfill@1"></script>
+		<script>cssVars()</script>
+	</head>
+
+
+
+
+
+
+
+
+<body onload='prepRevealJS()'>
+	<div id='heroImage'>
+		<div id='heroText' class='reveal'>
+			<div class='whiteFont biggerFont'>Taylor Calderone</div>
+			<div class='normalFont heroSubtitle'>Frontend Developer</div>
+		</div>
+		
+		<div class='reveal resumeButtonTop'>
+			<a href='https://www.taylorcalderone.com/Filehosting/Resume-Taylor-Calderone.pdf' target='_blank'>
+				<div class='newResumeButton bigFont whiteFont clickable'>
+					My Resume
+				</div>
+			</a>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+	<div class='contactInfo normalFont shadow'>
+		<span class='contactInfoText'>LOS ANGELES, USA</span>
+		<span class='contactInfoSpacer'>|</span>
+		<span class='contactInfoText'>TCALDERONE84@GMAIL.COM</span>
+	</div>
+
+
+
+
+
+
+
+
+	<!-- TODO - Changing text here requires manual changes to #backgroundGradient in all screen sizes --> 
+	<div id='textIntro' class='normalFont reveal margin0auto'>
+	Hi there! I'm a frontend / game developer living in Los Angeles. My background includes web plugins, automated forms, and database tools, as well as online games with 110,000 and 13,000 users. I managed the Wordpress-based web development team during my time working at a college IT department. I’ve always worn many hats as a developer, and over time I’ve built strong experience in UI / UX Design, Photoshop, Google Apps Script, and Digital Audio.
+	<br><br>In a past life, I was a lead content designer for a startup during the early years of the iOS App Store. We created products that shipped to 4.8 million users and won an international ’best-in-genre’ award.
+	</div>
+
+
+
+
+
+
+
+
+	<div id='majorProjects' class='reveal'>
+		<div id='majorProjectsHeader' class='whiteFont bigFont'>Major Projects</div>
+		
+		<div id='majorProjectsItemContainer'>
+			<a href='https://www.taylorcalderone.com/transcendResume/game.html' target='_blank'>
+				<div id='mpTranscend' class='majorProjectsItem shadow hoverRise normalFont clickable'>
+					<object><a href='https://github.com/spacecowgoesmoo/Transcend' target='_blank'>
+						<img class='githubCircle' src='Images/githubCircle.png'>
+					</a></object>
+					a graphics-heavy game featuring pixiJS
+				</div>
+			</a>
+			
+			<div id='mpSpacer'></div>
+			<a href='https://www.kongregate.com/games/spacecowgoesmoo/minites' target='_blank'>
+				<div id='mpMiniTES' class='majorProjectsItem shadow hoverRise normalFont clickable'>
+					<object><a href='https://github.com/spacecowgoesmoo/minites' target='_blank'>
+						<img class='githubCircle' src='Images/githubCircle.png'>
+					</a></object>	
+					an ascii rpg with a tiny screen footprint
+				</div>
+			</a>
+		</div>
+	</div>
+
+
+
+
+
+
+
+	<div id='smallProjectsBigContainer'>
+
+
+
+
+		<div class='reveal'>
+			<div class='cardHeader whiteFont bigFont'>React</div>
+			<div class='cardHeader normalFont italic'>
+				<a href='https://github.com/spacecowgoesmoo/React-Portfolio-Samples' target='_blank'>
+				Source code available on GitHub
+				</a>
+			</div>
+			
+			<div class='cardContainer'>
+				<a class='cardLinkContainer' href='https://www.taylorcalderone.com/portfolio/subpages/randomColorGenerator/' target='_blank'>
+					<div class='card shadow hoverRise'>
+						<img class='cardImage' src='Images/randomColorGenerator.png'>
+						<div class='cardSubtitle normalFont'>random color generator</div>
+					</div>
+				</a>
+				<a class='cardLinkContainer' href='https://www.taylorcalderone.com/portfolio/subpages/movieDB/' target='_blank'>    	
+					<div class='card shadow hoverRise'>
+						<img class='cardImage' src='Images/movieDB.png'>
+						<div class='cardSubtitle normalFont'>moviedb api</div>
+					</div>
+				</a>
+				<a class='cardLinkContainer' href='https://www.taylorcalderone.com/portfolio/subpages/reactSPA' target='_blank'>
+					<div class='card shadow hoverRise'>
+						<img class='cardImage' src='Images/reactSPA.png'>
+						<div class='cardSubtitle normalFont'>single page app</div>
+					</div>
+				</a>
+				<a class='cardLinkContainer' href='https://www.taylorcalderone.com/portfolio/subpages/ujo/' target='_blank'>    	
+					<div class='card shadow hoverRise'>
+						<img class='cardImage' src='Images/ujo.png'>
+						<div class='cardSubtitle normalFont'>audio player design</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		<div class='reveal'>
+			<div class='cardHeader whiteFont bigFont marginTop100'>CSS</div>
+			
+			<div class='cardContainer'>
+				<a class='cardLinkContainer' href='https://www.taylorcalderone.com/portfolio/subpages/coinMarketCap' target='_blank'>
+					<div class='card shadow hoverRise'>
+						<img class='cardImage' src='Images/coinmarketcap.png'>
+						<div class='cardSubtitle normalFont'>site redesign exercise</div>
+					</div>
+				</a>
+				<a class='cardLinkContainer' href='https://www.taylorcalderone.com/portfolio/subpages/spotify/' target='_blank'>    	
+					<div class='card shadow hoverRise'>
+						<img class='cardImage' src='Images/spotify.png'>
+						<div class='cardSubtitle normalFont'>psd recreation exercise</div>
+					</div>
+				</a>
+				<a class='cardLinkContainer' href='https://www.taylorcalderone.com/portfolio/subpages/iFit/' target='_blank'>
+					<div class='card shadow hoverRise'>
+						<img class='cardImage' src='Images/ifit.jpg'>
+						<div class='cardSubtitle normalFont'>psd recreation exercise</div>
+					</div>
+				</a>
+				<a class='cardLinkContainer' href='https://www.taylorcalderone.com/games' target='_blank'>
+					<div class='card shadow hoverRise'>
+						<img class='cardImage' src='Images/tcCom.png'>
+						<div class='cardSubtitle normalFont'>personal website</div>
+					</div>
+				</a>
+			</div>
+		</div>
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+		
+		<div class='reveal'>
+    		<div class='cardHeader whiteFont bigFont marginTop100'>Javascript</div>
+			
+			<div class='cardContainer'>
+				<a class='cardLinkContainer' href='https://www.rapanalysis.com/arcicembalo/' target='_blank'>
+					<div class='card shadow hoverRise'>
+						<img class='cardImage' src='Images/arcicembalo.png'>
+						<div class='cardSubtitle normalFont'>digital arcicembalo</div>
+					</div>
+				</a>
+				<a class='cardLinkContainer' href='https://www.taylorcalderone.com/portfolio/subpages/bitcoinPriceChart/' target='_blank'>
+					<div class='card shadow hoverRise'>
+						<img class='cardImage' src='Images/bitcoinPriceChart.png'>
+						<div class='cardSubtitle normalFont'>bitcoin price chart</div>
+					</div>
+				</a>
+				<a class='cardLinkContainer' href='https://github.com/spacecowgoesmoo/BasicAudioButtonJS' target='_blank'>
+					<div class='card shadow hoverRise'>
+						<img class='cardImage' src='Images/basicAudioButton.png'>
+						<div class='cardSubtitle normalFont'>basicaudiobutton.js</div>
+					</div>
+				</a>
+				<a class='cardLinkContainer' href='https://www.taylorcalderone.com/portfolio/subpages/aesTool/' target='_blank'>
+					<div class='card shadow hoverRise'>
+						<img class='cardImage' src='Images/aesTool.png'>
+						<div class='cardSubtitle normalFont'>aes-256 encrypter</div>
+					</div>
+				</a>
+				<a class='cardLinkContainer' href='https://github.com/spacecowgoesmoo/Mediasite-XML-Importer-for-Sony-Vegas' target='_blank'>
+					<div class='card shadow hoverRise'>
+						<img class='cardImage' src='Images/github.png'>
+						<div class='cardSubtitle normalFont'>mediasite xml importer</div>
+					</div>
+				</a>
+				<a class='cardLinkContainer' href='https://www.taylorcalderone.com/portfolio/subpages/gridium/' target='_blank'>
+					<div class='card shadow hoverRise'>
+						<img class='cardImage' src='Images/dynamicHTML.png'>
+						<div class='cardSubtitle normalFont'>manual dynamic html</div>
+					</div>
+				</a>
+				<a class='cardLinkContainer' href='https://www.taylorcalderone.com/portfolio/subpages/quickbase/' target='_blank'>
+					<div class='card shadow hoverRise'>
+						<img class='cardImage' src='Images/quickbase.png'>
+						<div class='cardSubtitle normalFont'>loan database viewer</div>
+					</div>
+				</a>
+				<a class='cardLinkContainer' href='https://github.com/spacecowgoesmoo/Google-Drive-File-Uploader---Master-Branch/tree/master' target='_blank'>
+					<div class='card shadow hoverRise'>
+						<img class='cardImage' src='Images/github.png'>
+						<div class='cardSubtitle normalFont'>anon. google uploader</div>
+					</div>
+				</a>
+				<!-- Blank Spacers -->
+				<div class='card blankCard'></div>
+			</div>
+    	</div>
+		
+		
+    	
+    	
+    	
+    	
+    	
+    	
+		<div class='reveal'>
+			<div class='cardHeader whiteFont bigFont marginTop100'>Older Projects (iOS)</div>
+			<div class='cardHeader normalFont italic'>Role (all three games): Game Design, UI & Graphic Design, Level Design, Music Production, Marketing</div>
+					
+			<div class='cardContainer'>
+				<a class='cardLinkContainer' href='https://itunes.apple.com/us/app/trace-2/id335668591' target='_blank'>
+					<div class='card shadow hoverRise'>
+						<img class='cardImage' src='Images/trace2.jpg'>
+						<div class='cardSubtitle normalFont'>trace 2</div>
+					</div>
+				</a>
+				<a class='cardLinkContainer' href='https://itunes.apple.com/us/app/gomi/id325288931' target='_blank'>
+					<div class='card shadow hoverRise'>
+						<img class='cardImage' src='Images/gomi.png'>
+						<div class='cardSubtitle normalFont'>gomi</div>
+					</div>
+				</a>
+				<a class='cardLinkContainer' href='https://itunes.apple.com/us/app/trace/id289446636' target='_blank'>
+					<div class='card shadow hoverRise'>
+						<img class='cardImage' src='Images/trace1.png'>
+						<div class='cardSubtitle normalFont'>trace</div>
+					</div>
+				</a>
+				<!-- Blank Spacers -->
+				<div class='card blankCard'></div>
+			</div>
+		</div>
+
+
+
+
+	</div>
+
+
+
+
+
+
+
+
+	<div id='emailMeContainer' class='reveal'> 					<!-- https://postmail.invotes.com/ -->
+		<div id='contactTheAuthor'>Contact me:</div>
+		
+		<form id="javascript_form">
+		    <input type="text" id='formSubject' name="subject" placeholder="Email address (required)"/>
+		    <textarea name="text" id='formMessage' placeholder="Message"></textarea>
+		    <input type="submit" id="js_send" value="Send" />
+
+		    <!-- not required, but we'd appreciate it if you'd link to us somewhere on your site -->
+		    <div class='tinyFont'>Powered by <a href="https://postmail.invotes.com" target="_blank">PostMail</a></div>
+		</form>
+
+		<script>
+			// Manually clears the form because Firefox remembers what you type
+			javascript_form.formSubject.value = '';
+			javascript_form.formMessage.value = '';
+			
+		    //update this with your js_form selector
+		    var form_id_js = "javascript_form";
+
+		    var data_js = {
+		        "access_token": "n4l67lz8xe56r4wgxne6b9jp"
+		    };
+
+		    function js_onSuccess() {
+		        alert('Email sent!')
+				window.location = window.location	// Refresh the page after the alert is OK'd
+		    }
+
+		    function js_onError(error) {
+		        alert("Sorry, there was an error sending the email.\n\nPlease fill in both textfields, or contact me at tcalderone84@gmail.com")
+				sendButton.value='Send';
+				sendButton.disabled=false;
+		    }
+
+		    var sendButton = document.getElementById("js_send");
+
+		    function js_send() {
+		        sendButton.value='Sending…';
+		        sendButton.disabled=true;
+		        var request = new XMLHttpRequest();
+		        request.onreadystatechange = function() {
+		            if (request.readyState == 4 && request.status == 200) {
+		                js_onSuccess();
+		            } else
+		            if(request.readyState == 4) {
+		                js_onError(request.response);
+		            }
+		        };
+
+		        var subject = document.querySelector("#" + form_id_js + " [name='subject']").value;
+		        var message = document.querySelector("#" + form_id_js + " [name='text']").value;
+				var messagePS = "\r\n \r\nThis email was sent from " + window.location.href
+				message = message + messagePS
+		        data_js['subject'] = subject;
+		        data_js['text'] = message;
+		        var params = toParams(data_js);
+
+		        request.open("POST", "https://postmail.invotes.com/send", true);
+		        request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+		        request.send(params);
+
+		        return false;
+		    }
+
+		    sendButton.onclick = js_send;
+
+		    function toParams(data_js) {
+		        var form_data = [];
+		        for ( var key in data_js ) {
+		            form_data.push(encodeURIComponent(key) + "=" + encodeURIComponent(data_js[key]));
+		        }
+
+		        return form_data.join("&");
+		    }
+
+		    var js_form = document.getElementById(form_id_js);
+		    js_form.addEventListener("submit", function (e) {
+		        e.preventDefault();
+		    });
+		</script>
+	</div>
+	
+
+
+
+
+
+
+
+	<div class='contactInfo normalFont shadow marginTop50'>
+		<span class='contactInfoText'>LOS ANGELES, USA</span>
+		<span class='contactInfoSpacer'>|</span>
+		<span class='contactInfoText'>TCALDERONE84@GMAIL.COM</span>
+	</div>
+
+
+
+
+
+
+
+
+	<div id='footer'>
+		<div class='reveal'>
+			<a href='https://www.taylorcalderone.com/Filehosting/Resume-Taylor-Calderone.pdf' target='_blank'>
+				<div class='newResumeButton resumeButtonBottom whiteFont bigFont clickable'>
+					My Resume
+				</div>
+			</a>
+		</div>
+	</div>
+
+
+
+
+</body>
