@@ -65,7 +65,7 @@ html {
 	height: 100%;						/* scrollReveal.js doesn't work right without this */
 	background-color: var(--blueDark);	/* This fixes a background gradient repeating bug that the previous line causes */
 }
-div { visibility: none; }				/* Prevents elements from showing up on the screen before the scrollReveal animation happens */
+.reveal { visibility: hidden; }			/* Prevents elements from showing up on the screen before the scrollReveal animation happens */
 
 /* Card Animation */
 @media screen and (min-width: 630px) {
