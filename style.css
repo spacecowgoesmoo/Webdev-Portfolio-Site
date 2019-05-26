@@ -178,8 +178,8 @@ html {
 }
 
 .majorProjectsItem {
-	height: 280px;
-	width: 374px;
+	height: 340px;
+	width: 450px;
 	padding-bottom: 20px;
 	display: inline-flex;
 	justify-content: center;
@@ -225,14 +225,13 @@ html {
 #smallProjectsBigContainer {
 	text-align: left;
 	width: 90%;
-	max-width: 865px;
+	max-width: 1175px;
 	margin: 0 auto;
 }
 
 .cardContainer {
 	text-align: center;
-	max-width: 900px;
-	margin: 0 auto 100 auto;
+	max-width: 1175px;
 	display: inline;
 }
 
@@ -250,13 +249,16 @@ _:-ms-input-placeholder, :root .cardLinkContainer, .blankCard { margin: 0; displ
 	/* Fancier design */
 	border-radius: 10px;
 	/* For centering the thinner app icons, and blank placeholders */
-	width: 171px;
+	width: 250px;
+	height: 250px;
 }
 
 .cardLinkContainer, .blankCard {
-	margin: 20px 20px 0px 20px;
+	margin: 20px;
 	display: inline-flex;
 }
+
+.blankCard { height: 0px !important; }
 
 .cardHeader { margin-left: 20px; }
 
@@ -268,8 +270,8 @@ _:-ms-input-placeholder, :root .cardLinkContainer, .blankCard { margin: 0; displ
 }
 
 .cardImage {
-	width: 171px;
-	height: 137px;
+	width: 250px;
+	height: 199px;
 	margin: 0 auto;
 	/* Fancier design */
 	border-bottom: 1px solid var(--grayLight);
@@ -282,7 +284,8 @@ _:-ms-input-placeholder, :root .cardLinkContainer, .blankCard { margin: 0; displ
 }
 
 .cardSubtitle {
-	margin: 5px 0 8px 0;
+	margin: 12px 0;
+	font-size: 1.1rem;
 }
 
 
@@ -317,7 +320,7 @@ _:-ms-input-placeholder, :root .cardLinkContainer, .blankCard { margin: 0; displ
 }
 
 #emailMeContainer input, #emailMeContainer textarea, #emailMeContainer button {
-	border-radius: 5px
+	border-radius: 5px;
 }
 
 #emailMeContainer input[type="submit"] {
@@ -361,7 +364,15 @@ _:-ms-input-placeholder, :root .cardLinkContainer, .blankCard { margin: 0; displ
 
 
 
-
+@media screen and (max-width: 1325px) {		/* ======= Non-fullscreen computer windows ======= */
+	#smallProjectsBigContainer { max-width: 865px; }
+	.cardContainer { max-width: 900px; }
+	.cardLinkContainer, .blankCard { margin: 20px 20px 0 20px; }
+	.card { width: 171px; height: 171px; }
+	.cardImage { width: 171px; height: 137px; }
+	.cardSubtitle { margin: 5px 0 8px 0; font-size: 1rem; }
+	.majorProjectsItem { height: 280px; width: 374px; }
+}
 
 @media screen and (max-width: 960px) {		/* ======= iPad portrait, plus a lot ======= */
 	.majorProjectsItem { height: 230px; width: 300px; padding-bottom: 10px; }
@@ -405,7 +416,7 @@ _:-ms-input-placeholder, :root .cardLinkContainer, .blankCard { margin: 0; displ
 	.majorProjectsItem { height: 290px; }
 	.githubCircle { right: 30px; }
 	
-	.card, .cardImage, .cardImageIOS { width: 335px; }
+	.card, .cardImage, .cardImageIOS { width: 335px; height: 300px; }
 	.cardImage { height: 267px; }
 }
 
@@ -413,12 +424,12 @@ _:-ms-input-placeholder, :root .cardLinkContainer, .blankCard { margin: 0; displ
 	.majorProjectsItem { height: 260px; }
 	
 	.card, .cardImage { width: 300px; }
-	.cardImage { height: 240px; }
 }
 
 @media screen and (max-width: 320px) {		/* ======= iPhone smol ======= */
 	.majorProjectsItem { height: 220px; }
 	
 	.card, .cardImage { width: 250px; }
-	.cardImage { height: 200px; }
+	.card { height: 250px; }
+	.cardImage { height: 215px; }
 }
