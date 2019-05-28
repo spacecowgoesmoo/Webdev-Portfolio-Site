@@ -37,10 +37,10 @@
 
 
 <body onload='prepRevealJS()'>
-	<div id='heroImage'>
-		<div id='heroText' class='reveal'>
+	<div class='heroImage'>
+		<div class='reveal heroText'>
 			<div class='whiteFont biggerFont'>Taylor Calderone</div>
-			<div class='normalFont heroSubtitle'>Frontend Developer</div>
+			<div class='heroSubtitle'>Frontend Developer</div>
 		</div>
 		
 		<div class='reveal resumeButtonTop'>
@@ -59,7 +59,7 @@
 
 
 
-	<div class='contactInfo normalFont shadow'>
+	<div class='contactInfo shadow'>
 		<span class='contactInfoText'>LOS ANGELES, USA</span>
 		<span class='contactInfoSpacer'>|</span>
 		<span class='contactInfoText'>TCALDERONE84@GMAIL.COM</span>
@@ -72,10 +72,13 @@
 
 
 
-	<!-- TODO - Changing text here requires manual changes to #backgroundGradient in all screen sizes --> 
-	<div id='textIntro' class='normalFont reveal margin0auto'>
-	I'm a frontend developer living in the Los Angeles area, with experience in complex Javascript applications, HTML5, CSS3, React, and UI / UX design. My background includes two online games with 117,000 and 14,000 users, and I managed the IT web development team during my time working at a local college.
-	<br><br>I was also a lead developer for a startup during the early years of the iOS App Store. Our most successful product was installed over 4.8 million times and was showcased for years in Apple’s internal developer site as the definitive free iOS game.
+	<div class='textIntro reveal'>
+		<p>
+			I'm a frontend developer living in the Los Angeles area, with experience in complex Javascript applications, HTML5, CSS3, React, and UI / UX design. My background includes two online games with 117,000 and 14,000 users, and I managed the IT web development team during my time working at a local college.
+		</p>
+		<p>
+			I was also a lead developer for a startup during the early years of the iOS App Store. Our most successful product was installed over 4.8 million times and was showcased for years in Apple’s internal developer site as the definitive free iOS game.
+		</p>
 	</div>
 
 
@@ -85,12 +88,12 @@
 
 
 
-	<div id='majorProjects' class='reveal'>
-		<div id='majorProjectsHeader' class='whiteFont bigFont'>Major Projects</div>
+	<div class='majorProjects reveal'>
+		<h3>Major Projects</h3>
 		
-		<div id='majorProjectsItemContainer'>
+		<div>
 			<a href='https://www.taylorcalderone.com/transcendResume/game.html' target='_blank'>
-				<div id='mpTranscend' class='majorProjectsItem shadow hoverRise normalFont clickable'>
+				<div id='mpTranscend' class='majorProjectsItem shadow hoverRise clickable'>
 					<object><a href='https://github.com/spacecowgoesmoo/Transcend' target='_blank'>
 						<img class='githubCircle' src='Images/githubCircle.png'>
 					</a></object>
@@ -98,9 +101,10 @@
 				</div>
 			</a>
 			
-			<div id='mpSpacer'></div>
+			<div class='mpSpacer'></div>
+
 			<a href='https://www.kongregate.com/games/spacecowgoesmoo/minites' target='_blank'>
-				<div id='mpMiniTES' class='majorProjectsItem shadow hoverRise normalFont clickable'>
+				<div id='mpMiniTES' class='majorProjectsItem shadow hoverRise clickable'>
 					<object><a href='https://github.com/spacecowgoesmoo/minites' target='_blank'>
 						<img class='githubCircle' src='Images/githubCircle.png'>
 					</a></object>	
@@ -116,45 +120,43 @@
 
 
 
-	<div id='smallProjectsBigContainer'>
+	<div class='smallProjectsBigContainer'>
 
 
 
 
-		<div class='reveal'>
-			<div class='cardHeader whiteFont bigFont'>React</div>
-			<div class='cardHeader normalFont italic'>
+		<div class='reveal cardContainer'>
+			<h3>React</h3>
+			<div class='cardHeader italic'>
 				<a href='https://github.com/spacecowgoesmoo/React-Portfolio-Samples' target='_blank'>
 				Source code available on GitHub
 				</a>
 			</div>
-			
-			<div class='cardContainer'>
-				<a class='cardLinkContainer' href='https://www.taylorcalderone.com/frontendPortfolio/subpages/randomColorGenerator/index.html' target='_blank'>
-					<div class='card shadow hoverRise'>
-						<img class='cardImage' src='Images/randomColorGenerator.png'>
-						<div class='cardSubtitle'>random color generator</div>
-					</div>
-				</a>
-				<a class='cardLinkContainer' href='https://www.taylorcalderone.com/frontendPortfolio/subpages/movieDB/index.html' target='_blank'>    	
-					<div class='card shadow hoverRise'>
-						<img class='cardImage' src='Images/movieDB.png'>
-						<div class='cardSubtitle'>moviedb api</div>
-					</div>
-				</a>
-				<a class='cardLinkContainer' href='https://www.taylorcalderone.com/frontendPortfolio/subpages/reactSPA/index.html' target='_blank'>
-					<div class='card shadow hoverRise'>
-						<img class='cardImage' src='Images/reactSPA.png'>
-						<div class='cardSubtitle'>single page app</div>
-					</div>
-				</a>
-				<a class='cardLinkContainer' href='https://www.taylorcalderone.com/frontendPortfolio/subpages/ujo/index.html' target='_blank'>    	
-					<div class='card shadow hoverRise'>
-						<img class='cardImage' src='Images/ujo.png'>
-						<div class='cardSubtitle'>audio player design</div>
-					</div>
-				</a>
-			</div>
+		
+			<a class='cardLinkContainer' href='https://www.taylorcalderone.com/frontendPortfolio/subpages/randomColorGenerator/index.html' target='_blank'>
+				<div class='card shadow hoverRise'>
+					<img class='cardImage' src='Images/randomColorGenerator.png'>
+					<div class='cardSubtitle'>random color generator</div>
+				</div>
+			</a>
+			<a class='cardLinkContainer' href='https://www.taylorcalderone.com/frontendPortfolio/subpages/movieDB/index.html' target='_blank'>    	
+				<div class='card shadow hoverRise'>
+					<img class='cardImage' src='Images/movieDB.png'>
+					<div class='cardSubtitle'>moviedb api</div>
+				</div>
+			</a>
+			<a class='cardLinkContainer' href='https://www.taylorcalderone.com/frontendPortfolio/subpages/reactSPA/index.html' target='_blank'>
+				<div class='card shadow hoverRise'>
+					<img class='cardImage' src='Images/reactSPA.png'>
+					<div class='cardSubtitle'>single page app</div>
+				</div>
+			</a>
+			<a class='cardLinkContainer' href='https://www.taylorcalderone.com/frontendPortfolio/subpages/ujo/index.html' target='_blank'>    	
+				<div class='card shadow hoverRise'>
+					<img class='cardImage' src='Images/ujo.png'>
+					<div class='cardSubtitle'>audio player design</div>
+				</div>
+			</a>
 		</div>
 		
 		
@@ -164,26 +166,21 @@
 		
 		
 		
-		<div class='reveal'>
-			<div class='cardHeader whiteFont bigFont marginTop100'>Nuxt / Vue</div>
-			<div class='cardHeader normalFont italic'>
+		<div class='reveal cardContainer'>
+			<h3>Nuxt / Vue</h3>
+
+			<div class='cardHeader italic'>
 				<a href='https://github.com/spacecowgoesmoo/Nuxt-Portfolio-Samples' target='_blank'>
 				Source code available on GitHub
 				</a>
 			</div>
-			
-			<div class='cardContainer'>
-				<a class='cardLinkContainer' href='https://www.taylorcalderone.com/frontendPortfolio/subpages/ifit2019/index.html' target='_blank'>
-					<div class='card shadow hoverRise'>
-						<img class='cardImage' src='Images/ifit2019.png'>
-						<div class='cardSubtitle'>vue components</div>
-					</div>
-				</a>
-				<!-- Blank Spacers -->
-				<div class='card blankCard'></div>
-				<div class='card blankCard'></div>
-				<div class='card blankCard'></div>
-			</div>
+		
+			<a class='cardLinkContainer' href='https://www.taylorcalderone.com/frontendPortfolio/subpages/ifit2019/index.html' target='_blank'>
+				<div class='card shadow hoverRise'>
+					<img class='cardImage' src='Images/ifit2019.png'>
+					<div class='cardSubtitle'>vue components</div>
+				</div>
+			</a>
 		</div>
 
 
@@ -193,35 +190,33 @@
 
 
 
-		<div class='reveal'>
-			<div class='cardHeader whiteFont bigFont marginTop100'>CSS</div>
-			
-			<div class='cardContainer'>
-				<a class='cardLinkContainer' href='https://www.taylorcalderone.com/frontendPortfolio/subpages/devXYZ/' target='_blank'>    	
-					<div class='card shadow hoverRise'>
-						<img class='cardImage' src='Images/devXYZ.png'>
-						<div class='cardSubtitle'>psd recreation exercise</div>
-					</div>
-				</a>
-				<a class='cardLinkContainer' href='https://www.taylorcalderone.com/frontendPortfolio/subpages/coinMarketCap' target='_blank'>
-					<div class='card shadow hoverRise'>
-						<img class='cardImage' src='Images/coinmarketcap.png'>
-						<div class='cardSubtitle'>site redesign exercise</div>
-					</div>
-				</a>
-				<a class='cardLinkContainer' href='https://www.taylorcalderone.com/frontendPortfolio/subpages/spotify/' target='_blank'>    	
-					<div class='card shadow hoverRise'>
-						<img class='cardImage' src='Images/spotify.png'>
-						<div class='cardSubtitle'>psd recreation exercise</div>
-					</div>
-				</a>
-				<a class='cardLinkContainer' href='https://www.taylorcalderone.com/games' target='_blank'>
-					<div class='card shadow hoverRise'>
-						<img class='cardImage' src='Images/tcCom.png'>
-						<div class='cardSubtitle'>personal website</div>
-					</div>
-				</a>
-			</div>
+		<div class='reveal cardContainer'>
+			<h3>CSS</h3>
+
+			<a class='cardLinkContainer' href='https://www.taylorcalderone.com/frontendPortfolio/subpages/devXYZ/' target='_blank'>    	
+				<div class='card shadow hoverRise'>
+					<img class='cardImage' src='Images/devXYZ.png'>
+					<div class='cardSubtitle'>psd recreation exercise</div>
+				</div>
+			</a>
+			<a class='cardLinkContainer' href='https://www.taylorcalderone.com/frontendPortfolio/subpages/coinMarketCap' target='_blank'>
+				<div class='card shadow hoverRise'>
+					<img class='cardImage' src='Images/coinmarketcap.png'>
+					<div class='cardSubtitle'>site redesign exercise</div>
+				</div>
+			</a>
+			<a class='cardLinkContainer' href='https://www.taylorcalderone.com/frontendPortfolio/subpages/spotify/' target='_blank'>    	
+				<div class='card shadow hoverRise'>
+					<img class='cardImage' src='Images/spotify.png'>
+					<div class='cardSubtitle'>psd recreation exercise</div>
+				</div>
+			</a>
+			<a class='cardLinkContainer' href='https://www.taylorcalderone.com/games' target='_blank'>
+				<div class='card shadow hoverRise'>
+					<img class='cardImage' src='Images/tcCom.png'>
+					<div class='cardSubtitle'>personal website</div>
+				</div>
+			</a>
 		</div>
     	
     	
@@ -231,59 +226,57 @@
     	
     	
 		
-		<div class='reveal'>
-    		<div class='cardHeader whiteFont bigFont marginTop100'>Javascript</div>
-			
-			<div class='cardContainer'>
-				<a class='cardLinkContainer' href='https://www.rapanalysis.com/arcicembalo/' target='_blank'>
-					<div class='card shadow hoverRise'>
-						<img class='cardImage' src='Images/arcicembalo.png'>
-						<div class='cardSubtitle'>digital arcicembalo</div>
-					</div>
-				</a>
-				<a class='cardLinkContainer' href='https://www.taylorcalderone.com/frontendPortfolio/subpages/bitcoinPriceChart/' target='_blank'>
-					<div class='card shadow hoverRise'>
-						<img class='cardImage' src='Images/bitcoinPriceChart.png'>
-						<div class='cardSubtitle'>bitcoin price chart</div>
-					</div>
-				</a>
-				<a class='cardLinkContainer' href='https://github.com/spacecowgoesmoo/BasicAudioButtonJS' target='_blank'>
-					<div class='card shadow hoverRise'>
-						<img class='cardImage' src='Images/basicAudioButton.png'>
-						<div class='cardSubtitle'>basicaudiobutton.js</div>
-					</div>
-				</a>
-				<a class='cardLinkContainer' href='https://www.taylorcalderone.com/frontendPortfolio/subpages/aesTool/' target='_blank'>
-					<div class='card shadow hoverRise'>
-						<img class='cardImage' src='Images/aesTool.png'>
-						<div class='cardSubtitle'>aes-256 encrypter</div>
-					</div>
-				</a>
-				<a class='cardLinkContainer' href='https://github.com/spacecowgoesmoo/Mediasite-XML-Importer-for-Sony-Vegas' target='_blank'>
-					<div class='card shadow hoverRise'>
-						<img class='cardImage' src='Images/github.png'>
-						<div class='cardSubtitle'>mediasite xml importer</div>
-					</div>
-				</a>
-				<a class='cardLinkContainer' href='https://www.taylorcalderone.com/frontendPortfolio/subpages/gridium/' target='_blank'>
-					<div class='card shadow hoverRise'>
-						<img class='cardImage' src='Images/dynamicHTML.png'>
-						<div class='cardSubtitle'>manual dynamic html</div>
-					</div>
-				</a>
-				<a class='cardLinkContainer' href='https://www.taylorcalderone.com/frontendPortfolio/subpages/quickbase/' target='_blank'>
-					<div class='card shadow hoverRise'>
-						<img class='cardImage' src='Images/quickbase.png'>
-						<div class='cardSubtitle'>loan database viewer</div>
-					</div>
-				</a>
-				<a class='cardLinkContainer' href='https://github.com/spacecowgoesmoo/Google-Drive-File-Uploader---Master-Branch/tree/master' target='_blank'>
-					<div class='card shadow hoverRise'>
-						<img class='cardImage' src='Images/github.png'>
-						<div class='cardSubtitle'>anon. google uploader</div>
-					</div>
-				</a>
-			</div>
+		<div class='reveal cardContainer'>
+    		<h3>Javascript</h3>
+		
+			<a class='cardLinkContainer' href='https://www.rapanalysis.com/arcicembalo/' target='_blank'>
+				<div class='card shadow hoverRise'>
+					<img class='cardImage' src='Images/arcicembalo.png'>
+					<div class='cardSubtitle'>digital arcicembalo</div>
+				</div>
+			</a>
+			<a class='cardLinkContainer' href='https://www.taylorcalderone.com/frontendPortfolio/subpages/bitcoinPriceChart/' target='_blank'>
+				<div class='card shadow hoverRise'>
+					<img class='cardImage' src='Images/bitcoinPriceChart.png'>
+					<div class='cardSubtitle'>bitcoin price chart</div>
+				</div>
+			</a>
+			<a class='cardLinkContainer' href='https://github.com/spacecowgoesmoo/BasicAudioButtonJS' target='_blank'>
+				<div class='card shadow hoverRise'>
+					<img class='cardImage' src='Images/basicAudioButton.png'>
+					<div class='cardSubtitle'>basicaudiobutton.js</div>
+				</div>
+			</a>
+			<a class='cardLinkContainer' href='https://www.taylorcalderone.com/frontendPortfolio/subpages/aesTool/' target='_blank'>
+				<div class='card shadow hoverRise'>
+					<img class='cardImage' src='Images/aesTool.png'>
+					<div class='cardSubtitle'>aes-256 encrypter</div>
+				</div>
+			</a>
+			<a class='cardLinkContainer' href='https://github.com/spacecowgoesmoo/Mediasite-XML-Importer-for-Sony-Vegas' target='_blank'>
+				<div class='card shadow hoverRise'>
+					<img class='cardImage' src='Images/github.png'>
+					<div class='cardSubtitle'>mediasite xml importer</div>
+				</div>
+			</a>
+			<a class='cardLinkContainer' href='https://www.taylorcalderone.com/frontendPortfolio/subpages/gridium/' target='_blank'>
+				<div class='card shadow hoverRise'>
+					<img class='cardImage' src='Images/dynamicHTML.png'>
+					<div class='cardSubtitle'>manual dynamic html</div>
+				</div>
+			</a>
+			<a class='cardLinkContainer' href='https://www.taylorcalderone.com/frontendPortfolio/subpages/quickbase/' target='_blank'>
+				<div class='card shadow hoverRise'>
+					<img class='cardImage' src='Images/quickbase.png'>
+					<div class='cardSubtitle'>loan database viewer</div>
+				</div>
+			</a>
+			<a class='cardLinkContainer' href='https://github.com/spacecowgoesmoo/Google-Drive-File-Uploader---Master-Branch/tree/master' target='_blank'>
+				<div class='card shadow hoverRise'>
+					<img class='cardImage' src='Images/github.png'>
+					<div class='cardSubtitle'>anon. google uploader</div>
+				</div>
+			</a>
     	</div>
 		
 		
@@ -293,32 +286,28 @@
     	
     	
     	
-		<div class='reveal'>
-			<div class='cardHeader whiteFont bigFont marginTop100'>Older Projects (iOS)</div>
-			<div class='cardHeader normalFont italic'>Role (all three games): Game Design, UI & Graphic Design, Level Design, Music Production, Marketing</div>
-					
-			<div class='cardContainer'>
-				<a class='cardLinkContainer' href='https://itunes.apple.com/us/app/trace-2/id335668591' target='_blank'>
-					<div class='card shadow hoverRise'>
-						<img class='cardImage' src='Images/trace2.jpg'>
-						<div class='cardSubtitle'>trace 2</div>
-					</div>
-				</a>
-				<a class='cardLinkContainer' href='https://itunes.apple.com/us/app/gomi/id325288931' target='_blank'>
-					<div class='card shadow hoverRise'>
-						<img class='cardImage' src='Images/gomi.png'>
-						<div class='cardSubtitle'>gomi</div>
-					</div>
-				</a>
-				<a class='cardLinkContainer' href='https://itunes.apple.com/us/app/trace/id289446636' target='_blank'>
-					<div class='card shadow hoverRise'>
-						<img class='cardImage' src='Images/trace1.png'>
-						<div class='cardSubtitle'>trace</div>
-					</div>
-				</a>
-				<!-- Blank Spacers -->
-				<div class='card blankCard'></div>
-			</div>
+		<div class='reveal cardContainer'>
+			<h3>Older Projects (iOS)</h3>
+			<div class='cardHeader italic'>Role (all three games): Game Design, UI & Graphic Design, Level Design, Music Production, Marketing</div>
+				
+			<a class='cardLinkContainer' href='https://itunes.apple.com/us/app/trace-2/id335668591' target='_blank'>
+				<div class='card shadow hoverRise'>
+					<img class='cardImage' src='Images/trace2.jpg'>
+					<div class='cardSubtitle'>trace 2</div>
+				</div>
+			</a>
+			<a class='cardLinkContainer' href='https://itunes.apple.com/us/app/gomi/id325288931' target='_blank'>
+				<div class='card shadow hoverRise'>
+					<img class='cardImage' src='Images/gomi.png'>
+					<div class='cardSubtitle'>gomi</div>
+				</div>
+			</a>
+			<a class='cardLinkContainer' href='https://itunes.apple.com/us/app/trace/id289446636' target='_blank'>
+				<div class='card shadow hoverRise'>
+					<img class='cardImage' src='Images/trace1.png'>
+					<div class='cardSubtitle'>trace</div>
+				</div>
+			</a>
 		</div>
 
 
@@ -333,8 +322,8 @@
 
 
 
-	<div id='emailMeContainer' class='reveal'> 					<!-- https://postmail.invotes.com/ -->
-		<div id='contactTheAuthor'>Contact me:</div>
+	<div class='emailMeContainer reveal'> 					<!-- https://postmail.invotes.com/ -->
+		<p>Contact me:</p>
 		
 		<form id="javascript_form">
 		    <input type="text" id='formSubject' name="subject" placeholder="Email address (required)"/>
@@ -342,7 +331,7 @@
 		    <input type="submit" id="js_send" value="Send" />
 
 		    <!-- not required, but we'd appreciate it if you'd link to us somewhere on your site -->
-		    <div class='tinyFont'>Powered by <a href="https://postmail.invotes.com" target="_blank">PostMail</a></div>
+		    <h6>Powered by <a href="https://postmail.invotes.com" target="_blank">PostMail</a></h6>
 		</form>
 
 		<script>
@@ -425,7 +414,7 @@
 
 
 
-	<div class='contactInfo normalFont shadow marginTop50'>
+	<div class='contactInfo shadow'>
 		<span class='contactInfoText'>LOS ANGELES, USA</span>
 		<span class='contactInfoSpacer'>|</span>
 		<span class='contactInfoText'>TCALDERONE84@GMAIL.COM</span>
@@ -438,7 +427,7 @@
 
 
 
-	<div id='footer'>
+	<div class='footer'>
 		<div class='reveal'>
 			<a href='https://www.taylorcalderone.com/Filehosting/Resume-Taylor-Calderone.pdf' target='_blank'>
 				<div class='newResumeButton resumeButtonBottom whiteFont bigFont clickable'>
