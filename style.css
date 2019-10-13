@@ -3,8 +3,8 @@
 	font-size: 16px;
 
 	--offWhite: #F9F9F9;
-	--grayDark: #535F69;
-	--grayLight: #9F9F9F;
+	--grayDark: #535F74;
+	--grayLight: #9F9FAF;
 	--blueDark: #202946;
     --blueLight: #404966;	
 }
@@ -22,14 +22,13 @@ body {
 
 /* Utilities */
 /* Old Font settings */
-.biggerFont { font-size: 1.5rem; }
 .bigFont { font-size: 1.25rem; }
 .whiteFont { color: var(--offWhite); }
 .italic { font-style: italic; }
 
 /* New font settings */
 h3, h6 { font-weight: 400; }
-h3 { color: var(--offWhite); font-size: 1.25rem;}
+h3 { color: var(--offWhite); font-size: 2.25rem; }
 h6 { font-size: 0.6rem; }
 
 /* Click simulation */
@@ -89,6 +88,8 @@ html {
 	position: relative;
 }
 
+.heroImage h3 { margin: 0; }
+
 .heroText {
 	text-align: center;
 	/* 50* - approximate element height */
@@ -136,6 +137,7 @@ html {
 	line-height: 50px;
 	text-align: center;
 	letter-spacing: 2px;
+	text-transform: uppercase;
 }
 
 
@@ -144,11 +146,19 @@ html {
 
 
 
+.textAndMajorProjectsContainer, .smallProjectsContainer {
+	text-align: left;
+	width: 90%;
+	max-width: 1175px;
+	margin: 0 auto;
+}
+
+.textAndMajorProjectsContainer {
+	max-width: 942px;
+}
 
 .textIntro {
-	width: 90%;
 	padding: 50px 0;
-	max-width: 865px;
 	line-height: 21px;
 	margin: 0 auto;
 }
@@ -161,6 +171,14 @@ html {
 
 
 .majorProjects {
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.majorProjects h3 { 
+	width: 100%;
 	text-align: center;
 }
 
@@ -175,7 +193,7 @@ html {
 }
 
 .mpSpacer {
-	width: 3%;
+	width: 40px;
 	display: inline-block;
 }
 
@@ -204,13 +222,6 @@ html {
 
 
 
-
-.smallProjectsBigContainer {
-	text-align: left;
-	width: 90%;
-	max-width: 1175px;
-	margin: 0 auto;
-}
 
 .cardContainer {
 	margin: 100px 0;
@@ -321,7 +332,8 @@ _:-ms-input-placeholder, :root .cardLinkContainer { margin: 0; display: inline; 
 
 
 @media screen and (max-width: 1325px) {		/* ======= Non-fullscreen computer windows ======= */
-	.smallProjectsBigContainer { max-width: 865px; }
+	.textAndMajorProjectsContainer { max-width: 820px; }
+	.smallProjectsContainer { max-width: 865px; }
 	.cardLinkContainer { margin: 20px 20px 0 20px; }
 	.cardImage { width: 171px; }
 	.cardSubtitle { margin: 5px 0 8px 0; font-size: 1rem; }
@@ -329,18 +341,20 @@ _:-ms-input-placeholder, :root .cardLinkContainer { margin: 0; display: inline; 
 }
 
 @media screen and (max-width: 960px) {		/* ======= iPad portrait, plus a lot ======= */
+	.textAndMajorProjectsContainer { max-width: 611px; }
 	.majorProjectsItem { height: 230px; width: 300px; padding-bottom: 10px; }
-	.mpSpacer { width: 1%; }
+	.mpSpacer { width: 10px; }
 	.githubCircle { position: absolute; margin-top: -50px; bottom: initial; left: initial; right: 10px; }
-	.smallProjectsBigContainer { max-width: 650px; }
+	.smallProjectsContainer { max-width: 650px; }
 }
 
 @media screen and (max-width: 720px) {
-	.smallProjectsBigContainer { max-width: 430px; }
+	.smallProjectsContainer { max-width: 430px; }
 	.emailMeContainer input, .emailMeContainer textarea { width: 300px; }
 }
 
-@media screen and (max-width: 630px) {		/* ======= iPad landscape splitscreen, plus a lot ======= */
+@media screen and (max-width: 670px) {		/* ======= iPad landscape splitscreen, plus a lot ======= */
+	.heroText { top: 90px; }
 	.heroImage { height: 300px; }
 	.textIntro { padding: 30px 0 50px 0; }
 	
@@ -348,18 +362,19 @@ _:-ms-input-placeholder, :root .cardLinkContainer { margin: 0; display: inline; 
 	.contactInfoSpacer { display: none; }
 	.contactInfoText { display: block; }
 
-	.majorProjects { margin-bottom: 30px; }
-	.majorProjectsItem { height: 350px; width: 90%; max-width: none; margin-bottom: 20px; }
+	.majorProjects { margin-bottom: 30px; flex-direction: column; }
+	.majorProjectsItem { height: 350px; width: 100%; max-width: none; margin-bottom: 20px; }
 	#mpTranscend, #mpMiniTES { background-size: cover; }
 	.mpSpacer { display: none; }
-	.githubCircle { width: 60px; position: absolute; margin-top: -80px; bottom: initial; left: initial; right: 40px; }
+	.githubCircle { width: 60px; position: absolute; margin-top: -60px; bottom: initial; left: initial; right: 20px; }
 }
 
 @media screen and (max-width: 480px) {		/* ======= iPhone+, plus a lot ======= */
+	.heroText { top: 70px; }
 	.heroImage { height: 250px; }
 	.majorProjectsItem { height: 290px; }
-	.githubCircle { right: 30px; }
-	.cardImage { width: 100%; }
+	.githubCircle { right: 10px; margin-top: -80px;}
+	.smallProjectsContainer, .cardImage { width: 100%; }
 }
 
 @media screen and (max-width: 376px) {		/* ======= iPhone ======= */
