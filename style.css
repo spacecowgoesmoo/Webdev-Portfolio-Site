@@ -28,7 +28,7 @@ body {
 
 /* New font settings */
 h3, h6 { font-weight: 400; }
-h3 { color: var(--offWhite); font-size: 2.25rem; }
+h3 { color: var(--offWhite); font-size: 2.13rem; }
 h6 { font-size: 0.6rem; }
 
 /* Click simulation */
