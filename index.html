@@ -1,8 +1,11 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>Portfolio - Taylor Calderone</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="Description" content="Taylor Calderone - Frontend Developer Portfolio">
 		<meta charset="utf-8"/>
 		<!-- Favicons -->
 		<link rel="apple-touch-icon" sizes="180x180" href="https://www.taylorcalderone.com/Images/Favicons/apple-touch-icon.png">
@@ -329,7 +332,7 @@
 		<p>Contact me:</p>
 		
 		<form id="javascript_form">
-		    <input type="text" id='formSubject' name="subject" placeholder="Email address (required)"/>
+		    <input type="text" id='formSubject' name="email" placeholder="Email address (required)"/>
 		    <textarea name="text" id='formMessage' placeholder="Message"></textarea>
 		    <input type="submit" id="js_send" value="Send" />
 
@@ -376,7 +379,7 @@
 		            }
 		        };
 
-		        var subject = document.querySelector("#" + form_id_js + " [name='subject']").value;
+		        var subject = document.querySelector("#" + form_id_js + " [name='email']").value;
 		        var message = document.querySelector("#" + form_id_js + " [name='text']").value;
 				var messagePS = "\r\n \r\nThis email was sent from " + window.location.href
 				message = message + messagePS
