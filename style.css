@@ -4,7 +4,7 @@
 
 	--offWhite: #F9F9F9;
 	--grayDark: #535F74;
-	--grayLight: #9F9FAF;
+	--grayLight: #BABABA;
 	--blueDark: #202946;
     --blueLight: #404966;	
 }
@@ -35,9 +35,14 @@ h6 { font-size: 0.6rem; }
 .clickable:hover { cursor: pointer; }
 
 /* Prevent card link color changes and underlines */
-a:link, a:visited, a:hover, a:active { color: var(--grayLight); text-decoration: none; }
+a:link, a:visited, a:hover, a:active { 
+	color: var(--grayLight);
+	text-decoration: none; 
+}
 /* Except in subheaders */
-.cardHeader a:link, .cardHeader a:visited, .cardHeader a:hover, .cardHeader a:active { text-decoration: underline; }
+.cardHeader a:link, .cardHeader a:visited, .cardHeader a:hover, .cardHeader a:active { 
+	text-decoration: underline;
+}
 
 /* Targets Chrome and Safari. Fixes misaligned centering of the last thing on the page */
 .centerFix:not(*:root) { margin-right: 5px; }
@@ -261,6 +266,7 @@ _:-ms-input-placeholder, :root .cardLinkContainer { margin: 0; display: inline; 
 	margin: 12px 0;
 	font-size: 1.1rem;
 	text-align: center;
+	color: var(--grayDark);
 }
 
 
