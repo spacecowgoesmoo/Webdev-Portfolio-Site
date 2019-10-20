@@ -290,6 +290,7 @@ _:-ms-input-placeholder, :root .cardLinkContainer { margin: 0; display: inline; 
     padding: 5px;
 	font-family: 'Tahoma', sans-serif;
 	font-size: 1rem;
+	box-sizing: content-box;
 }
 
 .emailMeContainer textarea {
