@@ -263,7 +263,7 @@ _:-ms-input-placeholder, :root .cardLinkContainer { margin: 0; display: inline; 
 }
 
 .cardSubtitle {
-	margin: 12px 0;
+	margin: 4px 0 12px 0;
 	font-size: 1.1rem;
 	text-align: center;
 	color: var(--grayDark);
@@ -340,7 +340,7 @@ _:-ms-input-placeholder, :root .cardLinkContainer { margin: 0; display: inline; 
 	.smallProjectsContainer { max-width: 865px; }
 	.cardLinkContainer { margin: 20px 20px 0 20px; }
 	.cardImage { width: 171px; }
-	.cardSubtitle { margin: 5px 0 8px 0; font-size: 1rem; }
+	.cardSubtitle { margin: 2px 0 8px 0; font-size: 1rem; }
 	.majorProjectsItem { height: 280px; width: 374px; }
 }
 
