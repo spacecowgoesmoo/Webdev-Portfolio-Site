@@ -302,6 +302,7 @@ _:-ms-input-placeholder, :root .cardLinkContainer { margin: 0; display: inline; 
 }
 
 .emailMeContainer input[type="submit"] {
+    -webkit-appearance: none;	/* Prevents iOS auto-styling */
     background-color: #2999EA;
     color: var(--offWhite);
 	transition: background-color 0.2s ease-in-out;
