@@ -193,6 +193,7 @@ html {
 	justify-content: center;
 	align-items: flex-end;
 	border-radius: 20px;
+	color: var(--offWhite);
 }
 
 .mpSpacer {
@@ -201,7 +202,7 @@ html {
 }
 
 #mpMiniTES { background: url("Images/miniTES.png"); }
-#mpTranscend { background: url("Images/transcend.jpg"); }
+#mpTranscend { background: url("Images/transcend.png"); }
 
 #mpMiniTES, #mpTranscend {
 	background-size: contain;
