@@ -176,7 +176,7 @@ html {
 .majorProjects {
 	width: 100%;
 	display: inline-flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	flex-wrap: wrap;
 }
 
@@ -201,8 +201,16 @@ html {
 	display: inline-block;
 }
 
-#mpMiniTES { background: url("Images/miniTES.png"); }
+#mpMiniTES {
+	background: url("Images/miniTES.png");
+	margin-top: 50px;
+}
 #mpTranscend { background: url("Images/transcend.png"); }
+#mpPopin {
+	background: url("Images/popIn.jpg");
+	background-size: cover;
+	background-position: right;
+}
 
 #mpMiniTES, #mpTranscend {
 	background-size: contain;
