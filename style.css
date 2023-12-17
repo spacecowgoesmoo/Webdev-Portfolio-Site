@@ -205,14 +205,18 @@ html {
 	background: url("Images/miniTES.png");
 	margin-top: 50px;
 }
-#mpTranscend { background: url("Images/transcend.png"); }
+#mpTranscend {
+	background: url("Images/transcend.png");
+	margin-top: 50px;
+}
 #mpPopin {
 	background: url("Images/popIn.jpg");
 	background-size: cover;
 	background-position: right;
 }
+#mpZone { background: url("Images/msnZone.png"); }
 
-#mpMiniTES, #mpTranscend {
+#mpMiniTES, #mpTranscend, #mpZone {
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: right;
@@ -381,8 +385,7 @@ _:-ms-input-placeholder, :root .cardLinkContainer { margin: 0; display: inline; 
 
 	.majorProjects { margin-bottom: 30px; flex-direction: column; }
 	.majorProjectsItem { height: 350px; width: 100%; max-width: none; margin-bottom: 20px; }
-	#mpTranscend, #mpMiniTES { background-size: cover; }
-	#mpMiniTES { margin-top: 0px; }
+	#mpTranscend, #mpMiniTES { background-size: cover; margin-top: 0px; }
 	.mpSpacer { display: none; }
 	.githubCircle { width: 60px; position: absolute; margin-top: -60px; bottom: initial; left: initial; right: 20px; }
 }
