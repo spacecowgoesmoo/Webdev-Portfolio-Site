@@ -6,7 +6,7 @@
 	--grayDark: #535F74;
 	--grayLight: #BABABA;
 	--blueDark: #202946;
-    --blueLight: #404966;	
+    --blueLight: #404966;
 }
 
 body {
@@ -14,7 +14,7 @@ body {
 
 	background: linear-gradient(to right bottom, var(--blueDark), var(--blueLight));
 	color: var(--grayLight);
-	
+
 	/* Prevents awful super-bold font in OSX Firefox and Chrome */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -35,12 +35,12 @@ h6 { font-size: 0.6rem; }
 .clickable:hover { cursor: pointer; }
 
 /* Prevent card link color changes and underlines */
-a:link, a:visited, a:hover, a:active { 
+a:link, a:visited, a:hover, a:active {
 	color: var(--grayLight);
-	text-decoration: none; 
+	text-decoration: none;
 }
-/* Except in subheaders */
-.cardHeader a:link, .cardHeader a:visited, .cardHeader a:hover, .cardHeader a:active { 
+/* Except in the intro text */
+.textIntro a:link, .textIntro a:visited, .textIntro a:hover, .textIntro a:active {
 	text-decoration: underline;
 }
 
@@ -56,7 +56,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 /* scrollReveal.js stuff */
-html { 
+html {
 	height: 100%;						/* scrollReveal.js doesn't work right without this */
 	background-color: var(--blueDark);	/* This fixes a background gradient repeating bug that the previous line causes */
 }
@@ -69,7 +69,7 @@ html {
 		top: 0px;
 		transition: top 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 	}
-	
+
 	.hoverRise:hover {
 		top: -5px;
 		box-shadow: 0px 20px 30px 0px rgba(0,0,0,0.25);
@@ -180,7 +180,7 @@ html {
 	flex-wrap: wrap;
 }
 
-.majorProjects h3 { 
+.majorProjects h3 {
 	width: 100%;
 	text-align: center;
 }
@@ -374,7 +374,7 @@ _:-ms-input-placeholder, :root .cardLinkContainer { margin: 0; display: inline; 
 	.heroText { top: 90px; }
 	.heroImage { height: 300px; }
 	.textIntro { padding: 30px 0 50px 0; }
-	
+
 	.contactInfo { line-height: 30px; }
 	.contactInfoSpacer { display: none; }
 	.contactInfoText { display: block; }
